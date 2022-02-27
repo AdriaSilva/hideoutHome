@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
     tools:context=".searchActivity">
 
@@ -19,7 +19,7 @@
         android:id="@+id/friendButton"
         android:layout_width="35pt"
         android:layout_height="wrap_content"
-        android:text="F"
+        android:text="@string/f"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/searchButton"
         app:layout_constraintStart_toEndOf="@+id/homeButton" />
@@ -28,7 +28,7 @@
         android:id="@+id/searchButton"
         android:layout_width="35pt"
         android:layout_height="wrap_content"
-        android:text="S"
+        android:text="@string/s"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/profileButton"
         app:layout_constraintStart_toEndOf="@+id/homeButton" />
@@ -37,7 +37,7 @@
         android:id="@+id/libraryButton"
         android:layout_width="35pt"
         android:layout_height="wrap_content"
-        android:text="L"
+        android:text="@string/l"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/profileButton"
         app:layout_constraintStart_toEndOf="@+id/searchButton" />
@@ -46,7 +46,15 @@
         android:id="@+id/profileButton"
         android:layout_width="35pt"
         android:layout_height="wrap_content"
-        android:text="P"
+        android:text="@string/p"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
