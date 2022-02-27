@@ -17,5 +17,29 @@ class searchActivity : AppCompatActivity() {
             finish()
         }
 
+        val button = findViewById<Button>(R.id.friendButton)
+
+        button.setOnClickListener{
+            val intent = Intent(this,friendActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        val button4 = findViewById<Button>(R.id.libraryButton)
+
+        button4.setOnClickListener{
+            val intent = Intent(this,libraryActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        val button5 = findViewById<Button>(R.id.profileButton)
+
+        button5.setOnClickListener{
+            val intent = Intent(this,profileActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
     }
 }
